@@ -1,0 +1,26 @@
+# Ignore environment files
+config.env
+.env
+
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Others
+coverage/
+
+# Ignore database files
+*.sqlite
+*.db
+
+# Ignore build output
+/dist
+/build

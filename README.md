@@ -105,8 +105,7 @@ FRONTEND_URL=http://localhost:5173
 
 # Database Configuration
 MONGO_URI=mongodb://127.0.0.1:27017/hireland
-# For MongoDB Atlas, use:
-# MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/hireland
+
 
 # JWT Configuration
 JWT_SECRET_KEY=your_secret_key_here

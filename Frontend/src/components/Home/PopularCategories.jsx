@@ -63,6 +63,7 @@ const PopularCategories = () => {
   return (
     <div className="categories">
       <h3>POPULAR CATEGORIES</h3>
+      <p className="subtitle">Explore opportunities across top industries and roles</p>
       <div className="banner">
         {categories.map((element) => {
           return (

@@ -53,7 +53,7 @@ const Login = () => {
       <section className="authPage">
         <div className="container">
           <div className="header">
-            <img src="./images/logoo.png" alt="logo" />
+            <span className="logo-text">Hire<span className="gradient-text">Sphere</span></span>
             {/* <h3>Login to your account</h3> */}
           </div>
           <form>

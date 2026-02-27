@@ -29,6 +29,7 @@ const PopularCompanies = () => {
     <div className="companies">
       <div className="container">
         <h3>TOP COMPANIES</h3>
+        <p className="subtitle">Leading organizations actively hiring on our platform</p>
         <div className="banner">
           {companies.map((element) => {
             return (

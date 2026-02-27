@@ -33,11 +33,10 @@ const HeroSection = () => {
         <div className="container">
           <div className="title">
             <h1>Find a job that suits</h1>
-            <h1>your interests and skills</h1>
+            <h1>your <span className="gradient-text">interests and skills</span></h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              voluptate repellat modi quidem aliquid eaque ducimus ipsa et,
-              facere mollitia!
+              Discover thousands of job opportunities with all the information you need.
+              Manage all your job applications from start to finish.
             </p>
           </div>
           <div className="image">

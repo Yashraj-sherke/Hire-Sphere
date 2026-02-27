@@ -7,9 +7,10 @@ const HowItWorks = () => {
     <>
       <div className="howitworks">
         <div className="container">
-          <h3>How HireLand Works</h3>
+          <h3>How <span className="gradient-text">Hire Sphere</span> Works</h3>
           <div className="banner">
             <div className="card">
+              <span className="step-number">01</span>
               <FaUserPlus />
               <p>Create Account</p>
               <p>
@@ -18,22 +19,22 @@ const HowItWorks = () => {
               </p>
             </div>
             <div className="card">
+              <span className="step-number">02</span>
               <MdFindInPage />
               <p>Find a Job/Post a Job</p>
               <p>
                 Employers can post detailed job listings to attract the right
                 talent, while job seekers can browse and filter job postings to
-                find suitable opportunities. Both parties can utilize advanced
-                search features to match their specific needs.
+                find suitable opportunities.
               </p>
             </div>
             <div className="card">
+              <span className="step-number">03</span>
               <IoMdSend />
               <p>Apply For Job/Recruit Suitable Candidates</p>
               <p>
                 Job seekers can submit tailored applications directly through
-                the platform, making the process streamlined and efficient.
-                Employers can review applications, conduct interviews, and hire
+                the platform. Employers can review applications and hire
                 the best candidate all within the platform.
               </p>
             </div>

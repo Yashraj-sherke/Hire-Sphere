@@ -29,6 +29,7 @@ const Jobs = () => {
     <section className="jobs page">
       <div className="container">
         <h1>ALL AVAILABLE JOBS</h1>
+        <p className="subtitle">Browse through the latest opportunities and find your perfect match</p>
         <div className="banner">
           {jobs.jobs &&
             jobs.jobs.map((element) => {

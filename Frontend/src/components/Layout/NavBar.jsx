@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { logout } from "../slices/userSlice";
 import { GiHamburgerMenu } from "react-icons/gi";
+import ThemeToggle from "./ThemeToggle";
 
 function NavBar() {
   const [show, setShow] = useState(false);
@@ -31,7 +32,7 @@ function NavBar() {
     <nav className={User.isAuthorized ? "navbarShow" : "navbarHide"}>
       <div className="container">
         <div className="logo">
-          <img src="./images/logo-white.png" alt="logo" />
+          <span className="logo-text">Hire<span className="gradient-text">Sphere</span></span>
         </div>
         <ul className={!show ? "menu" : "show-menu menu"}>
           <li>
@@ -70,8 +71,11 @@ function NavBar() {
 
           <button onClick={handleLogout}>LOGOUT</button>
         </ul>
-        <div className="hamburger">
-          <GiHamburgerMenu onClick={() => setShow(!show)} />
+        <div className="nav-actions">
+          <ThemeToggle />
+          <div className="hamburger">
+            <GiHamburgerMenu onClick={() => setShow(!show)} />
+          </div>
         </div>
       </div>
     </nav>

@@ -13,30 +13,21 @@ import PostJobs from "./components/Job/PostJob";
 import Application from "./components/Application/Application";
 import MyApplications from "./components/Application/MyApplications";
 import NotFound from "./components/NotFound/NotFound";
+import ThemeToggle from "./components/Layout/ThemeToggle";
 import axios from "axios";
 import { Toaster } from "react-hot-toast";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { login, settingAuth } from "./components/slices/userSlice";
 function App() {
-  // const dispatch = useDispatch();
-  // const User = useSelector((state) => state.user.isAuthorized);
-  // useEffect(() => {
-  //   const fetchUser = async () => {
-  //     try {
-  //       const response = await axios.get(
-  //         "http://localhost:4000/api/user/getUser",
-  //         { withCredentials: true }
-  //       );
-  //       dispatch(login(response.data.user));
-  //     } catch (error) {
-  //       dispatch(settingAuth(false));
-  //     }
-  //   };
-  //   fetchUser();
-  // }, [User, dispatch]);
+  const isAuthorized = useSelector((state) => state.user.isAuthorized);
   return (
     <>
+      {!isAuthorized && (
+        <div className="floating-theme-toggle">
+          <ThemeToggle />
+        </div>
+      )}
       <Router>
         <Navbar />
         <Routes>
@@ -59,3 +50,4 @@ function App() {
 }
 
 export default App;
+

@@ -60,7 +60,7 @@ function Register() {
   };
 
   if (User.isAuthorized) {
-    
+
     return <Navigate to={"/"} />;
   }
   console.log(User.isAuthorized);
@@ -70,7 +70,7 @@ function Register() {
       <section className="authPage">
         <div className="container">
           <div className="header">
-            <img src="./images/logoo.png" alt="logo" />
+            <span className="logo-text">Hire<span className="gradient-text">Sphere</span></span>
             {/* <h3>Create a new account</h3> */}
           </div>
           <form onSubmit={handleRegister}>

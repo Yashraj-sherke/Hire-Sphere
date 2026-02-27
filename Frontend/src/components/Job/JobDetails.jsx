@@ -15,7 +15,7 @@ const JobDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/api/job/getjob/${id}`, {
+      .get(`${import.meta.env.VITE_BACKEND_URL}/api/job/getjob/${id}`, {
         withCredentials: true,
       })
       .then((res) => {
